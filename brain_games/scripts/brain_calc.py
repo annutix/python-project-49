@@ -3,6 +3,7 @@ import operator
 from brain_games.cli import welcome_user
 import prompt
 
+
 def main():
     print('Welcome to the Brain Games!')
     brain_calc()
@@ -10,6 +11,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 def brain_calc(questions_to_ask=3):
     name = welcome_user()
@@ -21,7 +23,9 @@ def brain_calc(questions_to_ask=3):
     if user_was_correct:
         print(f'Congratulations, {name}!')
 
+
 operators_dict = {'*': operator.mul, '-': operator.sub, '+': operator.add}
+
 
 def ask_user_question(name):
     num1 = randint(0, 100)
@@ -31,7 +35,7 @@ def ask_user_question(name):
     correct_answer = str(f(num1, num2))
 
     print(f'Question: {str(num1)} {operator_str} {str(num2)}')
-    
+
     user_answer = prompt.string('Your answer: ')
     result = user_answer == correct_answer
     if result:
