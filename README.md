@@ -4,3 +4,5 @@
 <a href="https://codeclimate.com/github/annutix/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/8344561a4e1e452e947c/maintainability" /></a>
 
 [![asciicast](https://asciinema.org/a/Rpa0IyVJB31LFVI1Vwn024HZb.svg)](https://asciinema.org/a/Rpa0IyVJB31LFVI1Vwn024HZb)
+
+<script src="https://asciinema.org/a/Rpa0IyVJB31LFVI1Vwn024HZb.js" id="asciicast-Rpa0IyVJB31LFVI1Vwn024HZb" async="true"></script>
