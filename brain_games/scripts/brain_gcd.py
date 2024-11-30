@@ -1,20 +1,19 @@
-from random import randint, choice
-import operator
+from random import randint
 from brain_games.cli import welcome_user
 import prompt
 
 
 def main():
-    brain_calc()
+    brain_gcd()
 
 
 if __name__ == '__main__':
     main()
 
 
-def brain_calc(questions_to_ask=3):
+def brain_gcd(questions_to_ask=3):
     name = welcome_user()
-    print('What is the result of the expression?')
+    print('Find the greatest common divisor of given numbers.')
     for _ in range(questions_to_ask):
         user_was_correct: bool = ask_user_question(name)
         if not user_was_correct:
@@ -23,17 +22,12 @@ def brain_calc(questions_to_ask=3):
         print(f'Congratulations, {name}!')
 
 
-operators_dict = {'*': operator.mul, '-': operator.sub, '+': operator.add}
-
-
 def ask_user_question(name):
     num1 = randint(0, 100)
     num2 = randint(0, 100)
-    operator_str = choice(list(operators_dict.keys()))
-    f = operators_dict[operator_str]
-    correct_answer = str(f(num1, num2))
+    correct_answer = str(gcd(num1, num2))
 
-    print(f'Question: {str(num1)} {operator_str} {str(num2)}')
+    print(f'Question: {num1} {num2}')
 
     user_answer = prompt.string('Your answer: ')
     result = user_answer == correct_answer
@@ -45,3 +39,15 @@ def ask_user_question(name):
             + f"Correct answer was '{correct_answer}'.\n"
             + f"Let's try again, {name}!")
     return result
+
+
+def gcd(num1, num2):
+    a = max(num1, num2)
+    b = min(num1, num2)
+
+    remainder = a % b
+    while remainder > 0:
+        a = b
+        b = remainder
+        remainder = a % b
+    return b
