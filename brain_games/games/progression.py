@@ -6,7 +6,7 @@ def ask_brain_progression_question(name):
     initial_number = randint(0, 50)
     step = randint(1, 10)
     progression = ''
-    missed_number = randint(0, 10)
+    missed_number = randint(0, 9)
 
     for i in range(10):
         num = initial_number + i * step
