@@ -15,9 +15,11 @@ def ask_brain_progression_question(name):
             progression += '.. '
         else:
             progression += str(num) + ' '
+
     print('Question: ' + str(progression))
     user_answer = prompt.string('Your answer: ')
     result = user_answer == correct_answer
+    
     if result:
         print('Correct!')
     else:
