@@ -1,6 +1,0 @@
-{
-    "python.envFile": "${workspaceFolder}/.env",
-    "python.analysis.diagnosticMode": "workspace",
-    "editor.defaultFormatter": "ms-python.autopep8",
-    "python.analysis.extraPaths": [".venv/lib/python3.10/site-packages/"],
-}
