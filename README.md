@@ -1,21 +1,17 @@
-# Mathematical games training project
-
-## Hexlet tests and linter status
-[![Actions Status](https://github.com/annutix/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/annutix/python-project-49/actions)
-
+[![Actions Status](https://github.com/annutix/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/annutix/python-project-49/actions) 
 <a href="https://codeclimate.com/github/annutix/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/8344561a4e1e452e947c/maintainability" /></a>
 
-## Description
+# Mathematical games training project
 
 This pet project contains a python app with 5 simple mathematical games.
 
 ## Setup
 
-1. Clone the repository
+1. Clone the repository  
     `gh repo clone annutix/python-project-49`
-2. Install the package
+2. Install the package  
     `make package-install`
-3. Run the games
+3. Run the games  
     `brain-even`
 
 
